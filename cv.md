@@ -43,4 +43,5 @@ public class TwoToOne
 2019 - cur. BSUIR (Belarusian State University of Informatics and Radioelectronics)  
 2021 - cur. RS School (The Rolling Scopes School)  
 ## Projects
-[Laboratory from university](https://github.com/Monerd/Labs-Software-Design)
+- [Calculator](https://github.com/Monerd/Labs-Software-Design/tree/master/Calculator)  
+- [Windows service](https://github.com/Monerd/-Lab-works-C-Sharp/tree/main/Lab2)  

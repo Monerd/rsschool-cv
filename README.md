@@ -1,1 +1,1 @@
-# rsschool-cv
+https://monerd.github.io/rsschool-cv/

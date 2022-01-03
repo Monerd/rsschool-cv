@@ -1,1 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navigation-options">
+                <li class="nav-option"><a class="nav-a" href="#contacts">Contact Information</a></li>
+                <li class="nav-option"><a class="nav-a" href="#person-info">About me</a></li>
+                <li class="nav-option"><a class="nav-a" href="#skills">Skills</a></li>
+                <li class="nav-option"><a class="nav-a" href="#languages">Languages</a></li>
+                <li class="nav-option"><a class="nav-a" href="#code">Code Examples</a></li>
+                <li class="nav-option"><a class="nav-a" href="#education">Education</a></li>
+                <li class="nav-option"><a class="nav-a" href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="inline-div">
+                <div class="parent-main">
+                    <img class="photo" src="images/Photo.jpg" alt="Photo">
+                </div>
+                <div class="child-main">
+                    <h1 style="color: #CD853F;">
+                        Nemkovich Nikita
+                    </h1>
+                    <h3>
+                        <i>software and front-end developer.</i>
+                    </h3>
+                </div>
+            </div>
+            <div class="inline-div" id="person-info">
+                <div class="parent-main">
+                    <h2>
+                        About me
+                    </h2>
+                </div>
+                <div class="child-main">
+                    <div>
+                        I am an optimistic, sociable and responsible person.<br>
+                        I always strive for knowledge in order to gain experience in any field.<br>
+                        I study at the Belarusian State University of Informatics and Radioelectronics.<br>
+                        My goal now is to become a software and front-end developer.<br>
+                    </div>
+                </div>
+            </div>
+            <div class="inline-div" id="contacts">
+                <div class="parent-main">
+                    <h2>
+                        Contact Information
+                    </h2>
+                </div>
+                <div class="child-main">
+                    <ul>
+                        <li>Phone: +375 (44) 767-98-41</li>
+                        <li>Mail: <a class="info-a" href="mailto:nemkovich.nikitka@gmail.com">nemkovich.nikitka@gmail.com</a></li>
+                        <li>GitHub: <a class="info-a" href="https://github.com/Monerd">Monerd</a></li>
+                        <li>LinkedIn: <a class="info-a" href="https://www.linkedin.com/in/nikita-nemkovich-805927227/">Nemkovich Nikita</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="inline-div" id="skills">
+                <div class="parent-main">
+                    <h2>
+                        Skills
+                    </h2>
+                </div>
+                <div class="child-main">
+                    <ul>
+                        <li>Git, GitHub</li>
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>C#</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="inline-div" id="languages">
+                <div class="parent-main">
+                    <h2>
+                        Languages
+                    </h2>
+                </div>
+                <div class="child-main">
+                    <ul>
+                        <li>Russian (Native)</li>
+                        <li>Belarusian (Native)</li>
+                        <li>English (A2)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="inline-div" style="border: none; padding: 20px 20px 0 20px"  id="code">
+                    <h2>
+                        Code Examples
+                    </h2>
+            </div>
+            <div class="inline-div">
+                <div class="parent-main" style="align-self: auto;">
+                    <h3>
+                        Task
+                    </h3>
+                    <p>
+                        Codewars (7 kyu) "Two to one":<br>Take 2 strings s1 and s2 including only letters from ato z. 
+                        Return a new sorted string, the longest possible, containing distinct letters - each taken
+                        only once - coming from s1 or s2.
+                    </p>
+                </div>
+                <div class="child-main">
+                    <h3>
+                        Solution
+                    </h3>
+                    <pre class="code">
+                        <code>
+using System;
+using System.Linq;
 
+public class TwoToOne 
+{
+    public static string Longest (string s1,
+                                  string s2) 
+    {
+        var s3 = (s1 + s2).ToCharArray();
+        Array.Sort(s3);
+        return String.Join("",s3.Distinct());
+    }
+}
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            <div class="inline-div" id="education">
+                <div class="parent-main">
+                    <h2>
+                        Education
+                    </h2>
+                </div>
+                <div class="child-main">
+                    <ul style="list-style-type: none;">
+                        <li>2019 - cur. BSUIR (Belarusian State University of Informatics and Radioelectronics)</li>
+                        <li>2021 - cur. RS School (The Rolling Scopes School)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="inline-div" id="projects">
+                <div class="parent-main">
+                    <h2>
+                        Projects
+                    </h2>
+                </div>
+                <div class="child-main">
+                    <ul style="list-style-type: none;">
+                        <li style="padding: 5px;">
+                            <b><a class="info-a" href="https://github.com/Monerd/Labs-Software-Design/tree/master/Calculator">Calculator</a></b>
+                        </li>
+                        <li style="padding: 5px;">
+                            <b><a class="info-a" href="https://github.com/Monerd/-Lab-works-C-Sharp/tree/main/Lab2">Windows Service</a></b>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-items">
+            <ul class="footer-list">
+                <li class="footer-option"><a href="https://github.com/Monerd"><img src="./images/git_logo.png" alt="GitHub Logo"></a></li>
+                <li class="footer-option">© <time>2022</time></li>
+                <li class="footer-option"><a href="https://rs.school/js/"><img src="./images/rs_school-logo.png" alt="RS School JS"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
